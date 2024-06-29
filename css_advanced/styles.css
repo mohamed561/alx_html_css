@@ -1,0 +1,46 @@
+/* styles.css */
+
+body, h1, h2, h3, h4, p, ul 
+{
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img 
+{
+    height: 50px;
+    width: auto;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f8f9fa; 
+}
