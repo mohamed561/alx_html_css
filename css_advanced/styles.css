@@ -327,11 +327,12 @@ section:nth-of-type(4) h2 span {
 
 .membership-item {
     width: 200px;
+    text-align: center;
 }
 
-.membership-item .icon {
-    font-size: 44px;
-    color: #C271FF;
+.membership-item img {
+    width: 45px;
+    height: 45px;
     margin-bottom: 20px;
 }
 
