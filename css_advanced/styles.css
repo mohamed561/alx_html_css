@@ -312,6 +312,7 @@ section:nth-of-type(4) {
 section:nth-of-type(4) h2 {
     font-size: 32px;
     margin-bottom: 50px;
+    color: white;
 }
 
 section:nth-of-type(4) h2 span {
@@ -339,6 +340,7 @@ section:nth-of-type(4) h2 span {
 .membership-item h3 {
     font-size: 18px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .membership-item p {
