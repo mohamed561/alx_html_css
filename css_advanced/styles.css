@@ -163,6 +163,8 @@ section:nth-of-type(2) > div {
     align-items: center;
     max-width: 900px;
     margin: 0 auto;
+    border: 10px solid #C271FF;
+        background-color: rgba(197, 113, 255, 0.3);
 }
 
 section:nth-of-type(2) img {
