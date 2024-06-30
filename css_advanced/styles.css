@@ -398,3 +398,46 @@ section {
   section > div > div > div:last-child {
     margin-bottom: 0;
   }
+
+  /* footer section */
+.footer {
+    background-color: #0A1E2D;
+    padding: 20px 0; 
+    color: white; 
+    border-top: 3px solid #ffffff; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.footer-logo {
+    height: 40px; 
+}
+
+.footer-social {
+    display: flex; 
+    align-items: center; 
+}
+
+.footer-social i {
+    color: white; 
+    margin: 0 10px; 
+    font-size: 24px; 
+}
+
+.footer-social {
+    margin-left: auto; /* Push social icons to the right */
+}
+
+.footer-copyright {
+    margin-top: 10px; /* Space between content and text */
+    font-size: 14px; /* Text size */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center the copyright text */
+}
