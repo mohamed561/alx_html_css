@@ -329,3 +329,80 @@ body {
     font-size: 14px;
     margin-top: 10px;
   }
+  /*contact us section*/
+  .contact-us {
+    padding: 80px 0;
+    background-color: #fff;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #071629;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+  }
+  
+  .form-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .form-group input:focus ~ label,
+  .form-group input:valid ~ label,
+  .form-group textarea:focus ~ label,
+  .form-group textarea:valid ~ label {
+    top: -20px;
+    font-size: 12px;
+    color: #FF6565;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-bottom: 2px solid #FF6565;
+  }
+  
+  .cta-button {
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px 30px;
+    background-color: #FF6565;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff4f4f;
+  }
