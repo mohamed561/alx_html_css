@@ -153,3 +153,135 @@ body {
         font-size: 14px;
     }
 }
+
+/* What we do section */
+.what-we-do {
+    padding: 100px 0;
+    color: var(--color-black);
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-description {
+    max-width: 680px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+.service-item {
+    flex-basis: calc(25% - 60px);
+    text-align: center;
+}
+
+.service-item i {
+    display: block;
+    font-size: 100px;
+    color: var(--color-primary);
+    margin: 0 auto 20px;
+}
+
+.service-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+.service-item p {
+    font-size: 14px;
+}
+
+/* What we do section */
+
+@font-face {
+    font-family: 'holberton_school-icon';
+    src: url('./assets/holberton_school-icon/fonts/holberton_school-icon.woff') format('woff2'),
+         url('./assets/holberton_school-icon/fonts/holberton_school-icon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.what-we-do {
+    padding: 100px 0;
+    color: var(--color-black);
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-description {
+    max-width: 680px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+.service-item {
+    flex-basis: calc(25% - 60px);
+    text-align: center;
+    position: relative; /* Added to position icons */
+    padding-top: 60px; /* Adjust for icon space */
+}
+
+.service-item::before {
+    content: attr(data-icon); /* Using data-icon attribute */
+    font-family: "holberton_school-icon"; /* Replace with your actual font family */
+    font-size: 50px; /* Adjust size as needed */
+    color: var(--color-primary);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+.service-item p {
+    font-size: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .service-item {
+        flex-basis: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .what-we-do {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .service-item {
+        flex-basis: 100%;
+    }
+}
