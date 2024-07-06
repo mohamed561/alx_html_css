@@ -213,20 +213,20 @@ body {
 }
 
 .what-we-do {
-    padding: 100px 0;
+    padding: 50px 0; /* Compacted padding */
     color: var(--color-black);
 }
 
 .section-title {
-    font-size: 32px;
+    font-size: 28px; /* Compacted font size */
     font-weight: 700;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px; /* Compacted margin */
 }
 
 .section-description {
     max-width: 680px;
-    margin: 0 auto 60px;
+    margin: 0 auto 30px; /* Compacted margin */
     text-align: center;
 }
 
@@ -234,23 +234,24 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 80px;
+    gap: 40px; /* Compacted gap */
 }
 
 .service-item {
     flex-basis: calc(25% - 60px);
     text-align: center;
-    position: relative; /* Added to position icons */
-    padding-top: 60px; /* Adjust for icon space */
+    position: relative; /* Ensure relative positioning */
+    padding-top: 80px; /* Adjust for icon space */
+    margin-bottom: 40px; /* Space between items */
 }
 
 .service-item::before {
     content: attr(data-icon); /* Using data-icon attribute */
     font-family: "holberton_school-icon"; /* Replace with your actual font family */
     font-size: 50px; /* Adjust size as needed */
-    color: var(--color-primary);
+    color: #FF6565; /* Set icon color */
     position: absolute;
-    top: 0;
+    top: -50px; /* Position above the text */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -258,30 +259,24 @@ body {
 .service-item h3 {
     font-size: 18px;
     font-weight: 700;
-    margin: 20px 0 10px;
+    margin: 20px 0 10px; /* Adjusted margin */
 }
 
 .service-item p {
     font-size: 14px;
+    margin: 0; /* Reset margin for better spacing */
+    margin-top: 10px; /* Adjusted margin-top for spacing */
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
     .service-item {
-        flex-basis: calc(50% - 40px);
+        flex-basis: calc(50% - 20px); /* Compacted basis */
     }
 }
 
 @media (max-width: 480px) {
     .what-we-do {
-        padding: 50px 0;
+        padding: 30px 0; /* Compacted padding */
     }
-
-    .section-title {
-        font-size: 28px;
     }
-
-    .service-item {
-        flex-basis: 100%;
-    }
-}

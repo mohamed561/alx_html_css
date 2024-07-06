@@ -1,0 +1,85 @@
+/* What we do section */
+
+@font-face {
+    font-family: 'holberton_school-icon';
+    src: url('./assets/holberton_school-icon/fonts/holberton_school-icon.woff') format('woff2'),
+         url('./assets/holberton_school-icon/fonts/holberton_school-icon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.what-we-do {
+    padding: 50px 0; /* Compacted padding */
+    color: var(--color-black);
+}
+
+.section-title {
+    font-size: 28px; /* Compacted font size */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px; /* Compacted margin */
+}
+
+.section-description {
+    max-width: 680px;
+    margin: 0 auto 30px; /* Compacted margin */
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Compacted gap */
+}
+
+.service-item {
+    flex-basis: calc(25% - 30px); /* Compacted basis */
+    text-align: center;
+    position: relative; /* Added to position icons */
+    padding-top: 30px; /* Adjusted padding for icon space */
+    margin-bottom: 40px; /* Space between items */
+}
+
+.service-item::before {
+    content: attr(data-icon); /* Using data-icon attribute */
+    font-family: "holberton_school-icon"; /* Replace with your actual font family */
+    font-size: 60px; /* Larger icon size */
+    color: #FF6565; /* Set icon color */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-item h3 {
+    font-size: 18px; /* Adjusted font size */
+    font-weight: 700;
+    margin-top: 20px; /* Space above title */
+}
+
+.service-item p {
+    font-size: 14px; /* Adjusted font size */
+    margin-top: 10px; /* Space above paragraph */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .service-item {
+        flex-basis: calc(50% - 20px); /* Compacted basis */
+    }
+}
+
+@media (max-width: 480px) {
+    .what-we-do {
+        padding: 30px 0; /* Compacted padding */
+    }
+
+    .section-title {
+        font-size: 24px; /* Compacted font size */
+    }
+
+    .service-item {
+        flex-basis: 100%;
+    }
+}
