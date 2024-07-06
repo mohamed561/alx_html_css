@@ -286,7 +286,7 @@ body {
     background-color: #071629;
     background-image: url('./assets/headphones_hero_2.jpg');
     background-size: cover;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 80px 0;
   }
   
@@ -294,12 +294,14 @@ body {
     text-align: center;
     font-size: 32px;
     margin-bottom: 40px;
+    color: rgb(255, 255, 255)
   }
   
   .section-description {
     text-align: center;
     max-width: 600px;
     margin: 0 auto 60px;
+    color: white
   }
   
   .results-grid {
@@ -405,4 +407,50 @@ body {
   
   .cta-button:hover {
     background-color: #ff4f4f;
+  }
+  /*footer section*/
+  @font-face {
+    font-family: 'holberton_school-icon';
+    src: url('./assets/holberton_school-icon/fonts/holberton_school-icon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .footer {
+    background-color: #071629;
+    padding: 50px 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .footer-logo {
+    width: 161px;
+    height: 32px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .social-icon::before {
+    font-family: 'holberton_school-icon';
+    content: attr(data-icon);
+  }
+  
+  .copyright {
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
   }
